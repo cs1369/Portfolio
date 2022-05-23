@@ -12,7 +12,7 @@
     --botones2:#eb6629;
 }
 body{
-    background: var(--letras);
+    background: var(--fondo);
     display: flex;
     flex-direction: row;
     position: relative;
@@ -26,7 +26,7 @@ body{
 }
 .marcoPuerta{
     background: var(--fondo);
-    width: 50%;
+    width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -132,3 +132,47 @@ body{
 /*FIN PRECENTACION DE LOGO*/
 
 /*INICIO NAV*/
+header{
+    width: 100%;
+}
+.nav__container{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.nav__icon{
+    border: 0.2rem solid var(--botones2);
+    width: 2rem;
+    height: 2rem;
+    transform: rotate(45deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 0.2rem;
+}
+.nav__icon-letras{
+    position: absolute;
+    transform: rotate(-45deg);
+    font-size: 1rem;
+    color: var(--botones2);
+}
+.nav__iconMenu{
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 0.2rem solid var(--letras);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.nav__iconMenu-linea{
+    width: 1.5rem;
+    height:0.2rem;
+    margin-top: 0.4rem;
+    background: var(--letras);
+}
