@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --fondo:#18313b;
+    --botones:#f39548;
+    --letras:#2a9d8f;
+    --botones2:#eb6629;
+}
+body{
+    background: var(--letras);
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+/*INICIO PRESENTACION DE LOGO*/
+.marco{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.marcoPuerta{
+    background: var(--fondo);
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hoja1{
+    animation: derecha 3s 3s 1 linear forwards;
+    position: relative;
+}
+@keyframes derecha{
+    0%{
+
+    }
+    100%{
+        transform: translateX(-12rem);
+        visibility: hidden;
+    }
+}
+
+.marcoPuertaRombo{
+    border-radius: 0.3rem;
+    width: 7rem;
+    height: 7rem;
+    transform: rotate(45deg);
+    position: absolute;
+    
+    
+}
+.rombo1{
+    border-bottom: .4rem solid var(--botones2);
+    border-left: .4rem solid var(--botones2);
+    left: 7.7rem;
+}
+@keyframes luzRombo {
+    0%{
+        box-shadow: 0 0 1rem var(--botones2),0 0 4rem var(--botones2),0 0 6rem var(--botones2);
+    }
+    33%{
+        box-shadow: 0 0 1rem var(--botones2),0 0 3rem var(--botones2);
+    }
+    66%{
+        box-shadow: 0 0 1rem var(--botones2);
+    }
+    100%{
+        box-shadow: 0 0 0 var(--botones2);
+    }
+}
+.marcoPuertaRombo__letra{
+    color: var(--botones2);
+    position: absolute;
+    font-size: 5rem;
+    transform: rotate(-45deg);
+    animation: luzLetra 2s 1 linear forwards;
+}
+@keyframes luzLetra {
+    
+}
+.letra1{
+    top: 1.8rem;
+    left: 0.1rem;
+    animation: luzLetra1 1s 1.5s 1 linear forwards;
+}
+@keyframes luzLetra1 {
+    0%{
+        text-shadow: 0 0 1rem var(--botones2),0 0 4rem var(--botones2),0 0 6rem var(--botones2);
+    }
+    33%{
+        text-shadow: 0 0 1rem var(--botones2),0 0 3rem var(--botones2);
+    }
+    66%{
+        text-shadow: 0 0 1rem var(--botones2);
+    }
+    100%{
+        text-shadow: 0 0 0 var(--botones2);
+    }
+}
+.rombo2{
+    border-top: .4rem solid var(--botones2);
+    border-right: .4rem solid var(--botones2);
+    right: 7.7rem;
+    animation: luzRombo 1s 1.5s 1 linear forwards;
+}
+.letra2{
+    left:5rem;
+    bottom: -3rem;
+    top: -1.6rem;
+    animation: luzLetra1 1s 1.5s 1 linear forwards;
+}
+.hoja2{
+    position: relative;
+    animation: izquierda 3s 3s 1 linear forwards;
+    
+}
+@keyframes izquierda {
+    0%{
+
+    }
+    100%{
+        transform: translateX(12rem);
+        visibility: hidden;
+    } 
+}
+/*FIN PRECENTACION DE LOGO*/
+
+/*INICIO NAV*/
