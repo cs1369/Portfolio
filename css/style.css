@@ -22,112 +22,87 @@ body{
     position: absolute;
     width: 100%;
     height: 100vh;
-    display: flex;
-}
-.marcoPuerta{
     background: var(--fondo);
-    width: 100%;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.marcoRombo{
+    position: relative;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 0.3rem;
+    transform: rotate(45deg);
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.hoja1{
-    animation: derecha 3s 3s 1 linear forwards;
     position: relative;
-}
-@keyframes derecha{
-    0%{
-
-    }
-    100%{
-        transform: translateX(-12rem);
-        visibility: hidden;
-    }
-}
-
-.marcoPuertaRombo{
-    border-radius: 0.3rem;
-    width: 7rem;
-    height: 7rem;
-    transform: rotate(45deg);
-    position: absolute;
-    
-    
-}
-.rombo1{
-    border-bottom: .4rem solid var(--botones2);
-    border-left: .4rem solid var(--botones2);
-    left: 7.7rem;
+    animation: luzRombo 2s 3s 1 linear forwards;
 }
 @keyframes luzRombo {
     0%{
-        box-shadow: 0 0 1rem var(--botones2),0 0 4rem var(--botones2),0 0 6rem var(--botones2);
+        box-shadow: 0 0 1rem var(--botones2), 0 0 3rem var(--botones2), 0 0 5rem var(--botones2),0 0 10rem var(--botones2);
     }
-    33%{
-        box-shadow: 0 0 1rem var(--botones2),0 0 3rem var(--botones2);
+    25%{
+        box-shadow: 0 0 1rem var(--botones2), 0 0 3rem var(--botones2), 0 0 5rem var(--botones2);
     }
-    66%{
+    50%{
+        box-shadow: 0 0 1rem var(--botones2), 0 0 3rem var(--botones2);
+    }
+    75%{
         box-shadow: 0 0 1rem var(--botones2);
     }
     100%{
-        box-shadow: 0 0 0 var(--botones2);
+
     }
 }
-.marcoPuertaRombo__letra{
+.marcoRombo__letra{
     color: var(--botones2);
-    position: absolute;
-    font-size: 5rem;
     transform: rotate(-45deg);
-    animation: luzLetra 2s 1 linear forwards;
+    font-size: 4rem;
+    animation: luzLetra 2s 3s 1 linear forwards;
 }
 @keyframes luzLetra {
-    
-}
-.letra1{
-    top: 1.8rem;
-    left: 0.1rem;
-    animation: luzLetra1 1s 1.5s 1 linear forwards;
-}
-@keyframes luzLetra1 {
     0%{
-        text-shadow: 0 0 1rem var(--botones2),0 0 4rem var(--botones2),0 0 6rem var(--botones2);
+        text-shadow: 0 0 1rem var(--botones2), 0 0 3rem var(--botones2), 0 0 5rem var(--botones2),0 0 10rem var(--botones2);
     }
-    33%{
-        text-shadow: 0 0 1rem var(--botones2),0 0 3rem var(--botones2);
+    25%{
+        text-shadow: 0 0 1rem var(--botones2), 0 0 3rem var(--botones2), 0 0 5rem var(--botones2);
     }
-    66%{
+    50%{
+        text-shadow: 0 0 1rem var(--botones2), 0 0 3rem var(--botones2);
+    }
+    75%{
         text-shadow: 0 0 1rem var(--botones2);
     }
     100%{
-        text-shadow: 0 0 0 var(--botones2);
-    }
-}
-.rombo2{
-    border-top: .4rem solid var(--botones2);
-    border-right: .4rem solid var(--botones2);
-    right: 7.7rem;
-    animation: luzRombo 1s 1.5s 1 linear forwards;
-}
-.letra2{
-    left:5rem;
-    bottom: -3rem;
-    top: -1.6rem;
-    animation: luzLetra1 1s 1.5s 1 linear forwards;
-}
-.hoja2{
-    position: relative;
-    animation: izquierda 3s 3s 1 linear forwards;
-    
-}
-@keyframes izquierda {
-    0%{
 
     }
+}
+
+.marcoRombo__svg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: none;
+
+}
+.marcoRombo__svg-recta{
+    width: 100%;
+    height: 100%;
+    stroke: var(--botones2);
+    stroke-width: 0.5rem;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: vuelta 5s 1 linear forwards;
+}
+@keyframes vuelta{
     100%{
-        transform: translateX(12rem);
-        visibility: hidden;
-    } 
+        stroke-dashoffset: 0;
+    }
 }
 /*FIN PRECENTACION DE LOGO*/
 
