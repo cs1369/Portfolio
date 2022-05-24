@@ -27,6 +27,15 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    animation: finLogo 3s 5s 1 linear forwards;
+}
+@keyframes finLogo {
+    100%{
+        opacity: 0;
+    }
+    0%{
+        opacity: 1;
+    }
 }
 .marcoRombo{
     position: relative;
@@ -119,7 +128,7 @@ header{
     padding: 1rem;
 }
 .nav__icon{
-    border: 0.2rem solid var(--botones2);
+    border: 0.1rem solid var(--botones2);
     width: 2rem;
     height: 2rem;
     transform: rotate(45deg);
@@ -127,27 +136,26 @@ header{
     justify-content: center;
     align-items: center;
     position: relative;
-    border-radius: 0.2rem;
 }
 .nav__icon-letras{
     position: absolute;
     transform: rotate(-45deg);
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: var(--botones2);
 }
 .nav__iconMenu{
     width: 2.5rem;
     height: 2.5rem;
-    border: 0.2rem solid var(--letras);
+    border: 0.1rem solid var(--letras);
     border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    justify-content: center;
+    gap: 0.4rem;
 }
 .nav__iconMenu-linea{
     width: 1.5rem;
-    height:0.2rem;
-    margin-top: 0.4rem;
+    height:0.1rem;
     background: var(--letras);
 }
