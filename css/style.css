@@ -32,6 +32,7 @@ body{
 @keyframes finLogo {
     100%{
         opacity: 0;
+        visibility:hidden;
     }
     0%{
         opacity: 1;
@@ -160,7 +161,7 @@ header{
     background: var(--letras);
 }
 .nav__menu-items{
-    width: 100%;
+    width: 0;
     border: var(--letras) 0.1rem solid;
     opacity: 0;
     color: var(--botones2);
@@ -168,6 +169,10 @@ header{
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
+    
+}
+.animaciones-nav{
+    width: 100%;
     animation: animationMenu 1s 1 ease-in forwards;
 }
 @keyframes animationMenu {
