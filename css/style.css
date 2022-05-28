@@ -4,12 +4,14 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    font-family: 'Poppins', sans-serif;
 }
 :root{
     --fondo:#18313b;
     --botones:#f39548;
-    --letras:#2a9d8f;
+    --letras:rgb(226, 225, 225);
     --botones2:#eb6629;
+    --fondo2:#1b3a46;
 }
 body{
     background: var(--fondo);
@@ -127,6 +129,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+    background-color: var(--fondo2);
 }
 .nav__icon{
     border: 0.1rem solid var(--botones2);
@@ -162,12 +165,11 @@ header{
 }
 .nav__menu-items{
     width: 0;
-    border: var(--letras) 0.1rem solid;
     opacity: 0;
+    background: var(--fondo2);
     color: var(--botones2);
     padding: 1rem;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
     font-weight: 600;
     
 }
