@@ -5,20 +5,30 @@
     list-style: none;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
+
 }
 :root{
     --fondo:#18313b;
-    --botones:#f39548;
-    --letras:rgb(226, 225, 225);
+    --botones:#a8a7a6;
+    --letras:#dbaa06;
+    --letras2:#ebe6e6;
+    --letras3:#a8a7a7;
     --botones2:#eb6629;
     --fondo2:#1b3a46;
 }
 body{
     background: var(--fondo);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     position: relative;
 }
+/*--Botones--*/
+.btn{ 
+    border-radius: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+/*--Botones--*/
 /*INICIO PRESENTACION DE LOGO*/
 .marco{
     position: absolute;
@@ -118,9 +128,10 @@ body{
 }
 /*FIN PRECENTACION DE LOGO*/
 
-/*INICIO NAV*/
+/*INICIO DEL NAV*/
 header{
     width: 100%;
+    position:absolute;
 }
 .nav__container{
     width: 100%;
@@ -148,9 +159,9 @@ header{
     color: var(--botones2);
 }
 .nav__iconMenu{
-    width: 2.5rem;
-    height: 2.5rem;
-    border: 0.1rem solid var(--letras);
+    width: 2.2rem;
+    height: 2.2rem;
+    border: 0.1rem solid var(--botones);
     border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
@@ -159,12 +170,13 @@ header{
     gap: 0.4rem;
 }
 .nav__iconMenu-linea{
-    width: 1.5rem;
+    width: 1.2rem;
     height:0.1rem;
-    background: var(--letras);
+    background: var(--botones);
 }
 .nav__menu-items{
     width: 0;
+    height: 0;
     opacity: 0;
     background: var(--fondo2);
     color: var(--botones2);
@@ -175,12 +187,19 @@ header{
 }
 .animaciones-nav{
     width: 100%;
+    height: auto;
     animation: animationMenu 1s 1 ease-in forwards;
+}
+.nav__menuH100{
+    height: auto;
+}
+.nav__menuH0{
+    height: 0;
 }
 @keyframes animationMenu {
     from{
         opacity: 0;
-        transform: translate(10rem);
+        transform: translate(-10rem);
     }
     to{
         opacity: 1;
@@ -198,4 +217,49 @@ header{
 }
 .nav__menu-items:nth-child(4){
     animation-delay: 0.8s;
+}
+
+/*FIN DEL NAV*/
+
+/*------------*/
+
+/*INICIO SECTION-INICIO*/
+section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.section__inicio{
+    flex-direction: column;
+    padding: 0.3rem;
+}
+.img__inicio{
+    width: 14rem;
+    align-self: center;
+}
+.text__inicio{
+    margin-top: 6rem;
+    color: var(--botones2);
+    font-size: 1.3rem;
+}
+.h1__inicio{
+    font-size: 2.5rem;
+    color: var(--letras2) ;
+}
+.h3__inicio{
+    font-size: 1.5rem;
+    color: var(--letras3);
+}
+.btn1__inicio{
+    padding: 0.3rem 3rem;
+    align-self: center;
+    border: 0.1rem solid var(--botones2);
+    color: var(--letras2);
+    background: var(--botones2);
+}
+.btn2__inicio{
+    padding: 0.3rem 4rem;
+    align-self: center;
+    border: 0.1rem solid var(--botones2);
+    color: var(--botones2);
 }
