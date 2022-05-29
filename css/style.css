@@ -263,3 +263,38 @@ section{
     border: 0.1rem solid var(--botones2);
     color: var(--botones2);
 }
+/*FIN SECTION-INICIO*/
+
+/*------------*/
+
+/*INICIO SECTION-SOBRE-MI*/
+
+.section__sobreMi{
+    flex-direction: column;
+}
+.img__sobreMi{
+    align-self: center;
+    margin-top: 1rem;
+    padding: 0.2rem;
+    border:0.2rem solid #eb6629;
+    width: 12.5rem;
+    height: 12rem;
+    border-radius: 100%;
+}
+.card360__container__sobreMi{
+    border: 1px solid red;
+    position: relative;
+    height: 17rem;
+}
+.card360__sobreMi1{
+    position: absolute;
+    color: var(--letras3);
+    margin-top: 1rem;
+    padding: 0.5rem;
+    width: 100%;
+}
+.card360__sobreMi2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
