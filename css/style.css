@@ -282,19 +282,77 @@ section{
     border-radius: 100%;
 }
 .card360__container__sobreMi{
-    border: 1px solid red;
+
     position: relative;
     height: 17rem;
 }
 .card360__sobreMi1{
     position: absolute;
+    height: 17rem;
     color: var(--letras3);
     margin-top: 1rem;
     padding: 0.5rem;
     width: 100%;
 }
 .card360__sobreMi2{
+    position: absolute;
+    height: 17rem;
+    background: var(--fondo);
     width: 100%;
     display: flex;
     flex-direction: column;
+}
+.skills{
+    margin: 0.5rem 1rem;
+    color: white;
+}
+.bar{
+    margin-top: 0.5rem;
+    display: block;
+    width: 100%;
+    border-radius:2rem;
+}
+.color-html{
+    border: 0.1rem solid var(--botones2);
+}
+.html{
+    display: block;
+    border-radius:2rem;
+    width: 80%;
+    height: 0.3rem;
+    background: var(--botones2);
+    box-shadow: 0 0 0.5rem var(--botones2);
+}
+.color-css{
+    border: 0.1rem solid #1975ff;
+}
+.css{
+    display: block;
+    border-radius:2rem;
+    width: 75%;
+    height: 0.3rem;
+    background: #1975ff;
+    box-shadow: 0 0 0.5rem #1975ff;
+}
+.color-js{
+    border: 0.1rem solid #ebe70c;
+}
+.js{
+    display: block;
+    border-radius:2rem;
+    width: 60%;
+    height: 0.3rem;
+    background: #ebe70c;
+    box-shadow: 0 0 0.5rem #ebe70c;
+}
+.color-bts{
+    border: 0.1rem solid #8d05a8;
+}
+.bts{
+    display: block;
+    border-radius:2rem;
+    width: 40%;
+    height: 0.3rem;
+    background: #8d05a8;
+    box-shadow: 0 0 0.5rem #8d05a8;
 }
