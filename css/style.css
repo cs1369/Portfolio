@@ -282,26 +282,47 @@ section{
     border-radius: 100%;
 }
 .card360__container__sobreMi{
-
     position: relative;
     height: 17rem;
 }
 .card360__sobreMi1{
     position: absolute;
+    background: #18313b;
     height: 17rem;
     color: var(--letras3);
     margin-top: 1rem;
     padding: 0.5rem;
     width: 100%;
+    /*animation: card1 2s infinite linear;*/
+}
+@keyframes card1{
+    from{
+        transform: rotate3d(0,1,0,0deg);
+        z-index: 1;
+    }
+    to{
+        transform: rotate3d(0,1,0,180deg);
+    }
 }
 .card360__sobreMi2{
+    margin-top: 1rem;
     position: absolute;
     height: 17rem;
-    background: var(--fondo);
+   background: var(--fondo);
     width: 100%;
     display: flex;
     flex-direction: column;
+    /*animation: card2 2s infinite linear forwards;*/
 }
+@keyframes card2{
+    from{
+        transform: rotate3d(0,1,0,180deg);
+    }
+    to{
+        transform: rotate3d(0,1,0,0deg);
+    }
+}
+
 .skills{
     margin: 0.5rem 1rem;
     color: white;
@@ -355,4 +376,11 @@ section{
     height: 0.3rem;
     background: #8d05a8;
     box-shadow: 0 0 0.5rem #8d05a8;
+}
+.skills__sobreMi{
+    color: var(--botones2);
+    align-self: center;
+    padding: 0.5rem 2rem;
+    margin-top: 1.5rem;
+    border:1px solid var(--botones2);
 }
