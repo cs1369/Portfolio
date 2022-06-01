@@ -441,3 +441,13 @@ section{
 /*------------*/
 
 /*INICIO SECTION-PROYECTOS*/
+
+.section__proyectos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.proyectos__h1{
+    font-size: 2rem;
+    color: var(--letras2);
+}
