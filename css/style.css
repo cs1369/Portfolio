@@ -446,8 +446,23 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 3rem;
 }
 .proyectos__h1{
     font-size: 2rem;
     color: var(--letras2);
+}
+.tarjetas__proyectos{
+    box-shadow: 0 0 2rem var(--botones2);
+    border-top-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    width: 15rem;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.img__proyectos{ 
+    width: 15rem;
+    height: 10rem;
 }
