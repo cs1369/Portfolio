@@ -447,6 +447,8 @@ section{
     flex-direction: column;
     align-items: center;
     gap: 3rem;
+    height: auto;
+    padding: 3rem;
 }
 .proyectos__h1{
     font-size: 2rem;
@@ -461,8 +463,31 @@ section{
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    gap: 1rem;
 }
 .img__proyectos{ 
     width: 15rem;
     height: 10rem;
 }
+.titulos__proyectos{
+    color: var(--letras2);
+    font-size: 1rem;
+    align-self: center;
+}
+.descirpcion__proyectos{
+    color: var(--letras3);
+    padding: 0 0.5rem;
+}
+.btn__proyectos{
+    margin-top: 2rem;
+    width: 7rem;
+    color: var(--letras2);
+    align-self: center;
+    border: 0.2rem solid #da5213;
+    background: var(--botones2);
+}
+/*FIN SECTION-PROYECTOS*/
+
+/*------------*/
+
+/*INICIO FOOTER*/
