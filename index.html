@@ -101,31 +101,23 @@
             <div class="formEmail__footer">
                 <form id="form">
                     <div class="field">
-                      <label for="nomyape">nomyape</label>
-                      <input type="text" name="nomyape" id="nomyape">
+                      <label for="nomyape">Nombre:</label>
+                      <input type="text" name="nomyape" id="nomyape" class="txt__footer" required>
+                      <label for="contacto">Cel/Tel:</label>
+                      <input type="tel" name="contacto" id="contacto" class="txt__footer" required>
+                      <label for="correo">Correo:</label>
+                      <input type="email" name="correo" id="correo" class="txt__footer" required>
+                      <label for="asunto">Asunto:</label>
+                      <input type="text" name="asunto" id="asunto" class="txt__footer" required>
+                      <label for="mensaje" >Mensaje:</label>
+                      <textarea name="mensaje" id="mensaje" required></textarea>
                     </div>
-                    <div class="field">
-                      <label for="contacto">contacto</label>
-                      <input type="text" name="contacto" id="contacto">
+                    
+                    <div class="botones__footer">
+                        <input type="submit" id="button" value="Enviar" class="btn__footer btn">
+                        <button class="btn2__footer btn">Cancelar</button>
                     </div>
-                    <div class="field">
-                      <label for="correo">correo</label>
-                      <input type="text" name="correo" id="correo">
-                    </div>
-                    <div class="field">
-                      <label for="asunto">asunto</label>
-                      <input type="text" name="asunto" id="asunto">
-                    </div>
-                    <div class="field">
-                      <label for="mensaje">mensaje</label>
-                      <input type="text" name="mensaje" id="mensaje">
-                    </div>
-                    <div class="field">
-                      <label for="reply_to">reply_to</label>
-                      <input type="text" name="reply_to" id="reply_to">
-                    </div>
-                  
-                    <input type="submit" id="button" value="Send Email" >
+                    
                   </form>
                   
                   <script type="text/javascript"
@@ -134,6 +126,7 @@
                   <script type="text/javascript">
                     emailjs.init('trrDn8zPd7By1B3Ha')
                   </script>
+                  <div class="nube"></div>
             </div>
         </div>
     </footer>
