@@ -54,7 +54,14 @@ btnskills.addEventListener("click",()=>{
 
 
 // EMAIL
-
+const btnform=document.querySelector(".btn2__footer");
+const btnEmail=document.querySelector(".email__footer");
+btnEmail.addEventListener("click",()=>{
+    document.querySelector(".formEmail__footer").classList.toggle("form-visible");
+});
+btnform.addEventListener("click",()=>{
+    document.querySelector(".formEmail__footer").classList.toggle("form-visible");
+});
 const btn = document.getElementById('button');
 
 document.getElementById('form')
