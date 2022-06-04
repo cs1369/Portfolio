@@ -96,8 +96,45 @@
         <h3 class="h3__footer">Hablamos:</h3>
         <div class="icons__footer">
             <a href="https://www.linkedin.com/in/gabriel-suarez-904586193/"><i class="fa-brands fa-linkedin"></i></a>
-            <a href=""><i class="fa-solid fa-envelope"></i></a>
+            <a href=""><i class="fa-solid fa-envelope email__footer"></i></a>
             <a href="https://wa.link/h20dke"><i class="fa-brands fa-whatsapp-square"></i></a>
+            <div class="formEmail__footer">
+                <form id="form">
+                    <div class="field">
+                      <label for="nomyape">nomyape</label>
+                      <input type="text" name="nomyape" id="nomyape">
+                    </div>
+                    <div class="field">
+                      <label for="contacto">contacto</label>
+                      <input type="text" name="contacto" id="contacto">
+                    </div>
+                    <div class="field">
+                      <label for="correo">correo</label>
+                      <input type="text" name="correo" id="correo">
+                    </div>
+                    <div class="field">
+                      <label for="asunto">asunto</label>
+                      <input type="text" name="asunto" id="asunto">
+                    </div>
+                    <div class="field">
+                      <label for="mensaje">mensaje</label>
+                      <input type="text" name="mensaje" id="mensaje">
+                    </div>
+                    <div class="field">
+                      <label for="reply_to">reply_to</label>
+                      <input type="text" name="reply_to" id="reply_to">
+                    </div>
+                  
+                    <input type="submit" id="button" value="Send Email" >
+                  </form>
+                  
+                  <script type="text/javascript"
+                    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+                  
+                  <script type="text/javascript">
+                    emailjs.init('trrDn8zPd7By1B3Ha')
+                  </script>
+            </div>
         </div>
     </footer>
     <!-- <div class="marco">
