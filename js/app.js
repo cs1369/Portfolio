@@ -51,3 +51,36 @@ btnskills.addEventListener("click",()=>{
         bts.classList.remove("animation-bts");
     }
 });
+
+
+// EMAIL
+const btnform=document.querySelector(".btn2__footer");
+const btnEmail=document.querySelector(".email__footer");
+btnEmail.addEventListener("click",()=>{
+    document.querySelector(".formEmail__footer").classList.toggle("form-visible");
+});
+btnform.addEventListener("click",()=>{
+    document.querySelector(".formEmail__footer").classList.toggle("form-visible");
+});
+const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Enviado...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_8sv3829';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Enviar';
+      alert('Mensaje Enviado. Muchas Gracias!');
+      form.reset();
+    }, (err) => {
+      btn.value = 'Enviar';
+      alert(JSON.stringify(err));
+    });
+    
+});
