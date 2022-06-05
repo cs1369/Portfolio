@@ -6,18 +6,25 @@ const card1 = document.querySelector(".card360__sobreMi1"), card2=document.query
 const html =document.querySelector(".html"),css=document.querySelector(".css"),js=document.querySelector(".js"),bts=document.querySelector(".bts");
 
 menu.addEventListener("click",()=>{
-    if(nav__menu.classList.contains("nav__menuH0")){
-        nav__menu.classList.remove("nav__menuH0");
-        nav__menu.classList.add("nav__menuH100");
-
+    if(li[1].classList.contains("animaciones-nav")){
+        for(let lista of li){
+            lista.classList.remove("animaciones-nav");
+            lista.classList.add("animaciones-nav2");
+            
+        }
+    }
+    else if(li[1].classList.contains("animaciones-nav2")){
+        for(let lista of li){
+            lista.classList.remove("animaciones-nav2");
+            lista.classList.add("animaciones-nav");
+        }
     }
     else{
-        nav__menu.classList.remove("nav__menuH100");
-        nav__menu.classList.add("nav__menuH0"); 
+        for(let lista of li){
+            lista.classList.add("animaciones-nav");
+        }
     }
-    for(let lista of li){
-        lista.classList.toggle("animaciones-nav");
-    }
+    
 });
 btnskills.addEventListener("click",()=>{
     if(card1.classList.contains("animation-card1") || card1.classList.contains("animation-card2")){

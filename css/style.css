@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 *{
     margin: 0;
     padding: 0;
@@ -175,8 +178,8 @@ header{
     background: var(--botones);
 }
 .nav__menu-items{
-    width: 0;
-    height: 0;
+    width: 100%;
+    height: auto;
     opacity: 0;
     background: var(--fondo2);
     color: var(--botones2);
@@ -185,17 +188,33 @@ header{
     font-weight: 600;
     
 }
+.nav__menu-items a{
+    display: block;
+    width: 100%;
+    color: var(--botones2);
+}
+.animaciones-nav2{
+    opacity: 1;
+    width: 100%;
+    height: auto;
+    animation: animationMenu2 1s 1 ease-in forwards;
+}
+@keyframes animationMenu2 {
+    from{
+        opacity: 1;
+        transform: translate(0rem);
+    }
+    to{
+        opacity: 0;
+        transform: translate(-10rem);       
+    }
+}
 .animaciones-nav{
     width: 100%;
     height: auto;
     animation: animationMenu 1s 1 ease-in forwards;
 }
-.nav__menuH100{
-    height: auto;
-}
-.nav__menuH0{
-    height: 0;
-}
+
 @keyframes animationMenu {
     from{
         opacity: 0;
