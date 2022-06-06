@@ -200,14 +200,18 @@ header{
     animation: animationMenu2 1s 1 ease-in forwards;
 }
 @keyframes animationMenu2 {
-    from{
+    0%{
         opacity: 1;
         transform: translate(0rem);
     }
-    to{
+    99%{
         opacity: 0;
         transform: translate(-10rem);       
     }
+    100%{
+        visibility: hidden;
+    }
+    
 }
 .animaciones-nav{
     width: 100%;
@@ -613,3 +617,4 @@ form{
 .form-visible{
     visibility: hidden;
 }
+/*FIN FOOTER*/
