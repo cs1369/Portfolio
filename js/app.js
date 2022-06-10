@@ -86,9 +86,11 @@ document.getElementById('form')
       btn.value = 'Enviar';
       alert('Mensaje Enviado. Muchas Gracias!');
       form.reset();
+      document.querySelector(".formEmail__footer").classList.add("form-visible");
     }, (err) => {
       btn.value = 'Enviar';
       alert(JSON.stringify(err));
+      
     });
     
 });
