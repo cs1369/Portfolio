@@ -35,7 +35,7 @@ body{
 /*--Botones--*/
 /*INICIO PRESENTACION DE LOGO*/
 .marco{
-    position: absolute;
+    position:absolute;
     width: 100%;
     height: 100vh;
     background: var(--fondo);
@@ -540,9 +540,9 @@ i{
 }
 .formEmail__footer{
     position: absolute;
-    width: 17rem;
-    height: 30rem;
-    background: #f0ebeb;
+    width: 90%;
+    height: 80vh;
+    background:#1c3c49;
     bottom:3rem;
     border-radius: 1.5rem;
     display: flex;
@@ -555,61 +555,82 @@ i{
     height: 0.1rem;
 }
 .field{
+    width: 90%;
     display: flex;
     flex-direction: column;
-    align-items:flex-start;
-    padding: 1rem;
+    align-items: flex-start;
+}
+.field:nth-child(5){
+    height: 30vh;
 }
 textarea{
+    border: 0.1rem solid var(--botones2);
+    background: #18313b;
     resize: none;
-    width: 15rem;
-    height: 7rem;
+    width: 100%;
+    height: 100%;
+    color: var(--letras2)
+    
+}
+textarea:focus{
+    border: 0.2rem solid var(--botones2);
 }
 label{
     margin-top: 0.5rem ;
+    color: var(--letras3)
+}
+.txt__footer:focus{
+    border-bottom: 0.2rem solid var(--botones2);
 }
 form{
     display: flex;
     flex-direction: column;
-    height: 30rem;
+    height: 100%;
+    align-items: center;
+
 }
 .txt__footer{
-    width: 15rem;
+    width: 100%;
     border: none;
     outline: none;
-    border-bottom:0.1rem solid #18313b;
-    background: #f0ebeb;
+    border-bottom:0.1rem solid var(--botones2);
+    background: #1c3c49;
+    color: var(--letras2);
+}
+.field:nth-child(1){
+    margin-top: 1rem;
 }
 .botones__footer{
+    margin-top: 0.5rem;
     display: flex;
     justify-content: center;
     gap: 2rem;
 }
 .btn__footer{
-    text-shadow: 0 0 0.1rem black;
     color: #ebe6e6;
     order: 2;
     width: 7rem;
     padding: 0.5rem 1rem;
-    border: 0.2rem solid #25e413;
-    background: #25e413;
+    border: 0.1rem solid var(--botones2);
+    background: var(--botones2);
 }
 .btn2__footer{
-    text-shadow: 0 0 0.1rem black;
     width: 7rem;
-    color: #ebe6e6;
+    color: var(--botones2);
     padding: 0.5rem 1rem;
-    border: 0.2rem solid #fa2222;
-    background: #fa2222;
+    border: 0.1rem solid var(--botones2);
+    background: #1c3c49;
 }
 .nube{
+    position: absolute;
     margin-top: 1rem;
     align-self: center;
+    top: 95%;
     width: 0;
     height: 0;
     border-right: 1rem solid transparent;
     border-left: 1rem solid transparent;
-    border-top: 2rem solid #f0ebeb;
+    border-top: 2rem solid #1c3c49;
 }
 .form-visible{
     visibility: hidden;
