@@ -57,6 +57,10 @@ btnskills.addEventListener("click",()=>{
         js.classList.remove("animation-js");
         bts.classList.remove("animation-bts");
     }
+    const skillsH3=document.querySelectorAll(".skills__h3");
+    for(let h3 of skillsH3){
+        h3.classList.toggle("animation__skillsH3");
+    }
 });
 
 

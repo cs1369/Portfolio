@@ -363,8 +363,10 @@ section{
     justify-content: space-between;
 }
 .skills__h3{
-    opacity: 0;
-    animation: skillsH3 1s 2s 1 linear forwards;
+    opacity: 0;  
+}
+.animation__skillsH3{
+    animation: skillsH3 2s 2s 1 linear forwards;
 }
 
 @keyframes skillsH3 {
@@ -375,6 +377,8 @@ section{
         opacity: 1;
     }
 }
+
+
 .bar{
     margin-top: 0.5rem;
     display: block;
