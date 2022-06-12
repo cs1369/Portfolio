@@ -189,6 +189,9 @@ header{
     font-weight: 600;
     
 }
+.nav__menu-items:hover{
+    background: #1b3641;
+}
 .nav__menu-items a{
     display: block;
     width: 100%;
