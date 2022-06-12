@@ -358,6 +358,23 @@ section{
     margin: 0.5rem 1rem;
     color: white;
 }
+.skills__porcentajes{
+    display: flex;
+    justify-content: space-between;
+}
+.skills__h3{
+    opacity: 0;
+    animation: skillsH3 1s 2s 1 linear forwards;
+}
+
+@keyframes skillsH3 {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
 .bar{
     margin-top: 0.5rem;
     display: block;
@@ -542,6 +559,7 @@ i{
     position: absolute;
     width: 90%;
     height: 80vh;
+    min-height: 30rem;
     background:#1c3c49;
     bottom:3rem;
     border-radius: 1.5rem;
