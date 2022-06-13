@@ -660,5 +660,26 @@ form{
 .form-visible{
     visibility: hidden;
 }
+.nav__escritorio{
+    display: none;
+}
 /*FIN FOOTER*/
 
+/* ------------------ */
+/* ESCRITORIO */
+/* ------------------ */
+
+/* INICIO */
+@media screen and (min-width:1024px) {
+  .nav__responsive,.nav__iconMenu{
+      display: none;
+  }
+
+  /*INICIO NAV ESCRITORIO*/
+  .nav__escritorio{
+      display: flex;
+      gap: 2rem;
+  }
+
+  /* FIN NAV ESCRITORIO */
+}
