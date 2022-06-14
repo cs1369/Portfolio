@@ -660,7 +660,7 @@ form{
 .form-visible{
     visibility: hidden;
 }
-.nav__escritorio{
+.nav__escritorio,.btn__escritorio{
     display: none;
 }
 /*FIN FOOTER*/
@@ -671,15 +671,68 @@ form{
 
 /* INICIO */
 @media screen and (min-width:1024px) {
-  .nav__responsive,.nav__iconMenu{
+  .nav__responsive,.nav__iconMenu,.btn__responsive{
       display: none;
   }
 
   /*INICIO NAV ESCRITORIO*/
+  .nav__container{
+      padding: 1rem 4rem;
+  }
   .nav__escritorio{
       display: flex;
       gap: 2rem;
   }
-
+  .nav__escritorio-items a{
+      color: var(--letras2);
+      font-weight: bold;
+  }
+  .nav__escritorio-items a:hover{
+      color: var(--botones2);
+      border-bottom: 0.1rem solid var(--botones2);
+  }
   /* FIN NAV ESCRITORIO */
+
+  /*INICIO SECTION-INICIO ESCRITORIO*/
+  .section__inicio{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0 4rem;
+  }
+  .sectio__inicio-contenedor{
+      align-self: flex-start;
+  }
+  .text__inicio{
+      align-self: flex-start;
+      font-size: 1.5rem;
+  }
+  .h1__inicio{
+      font-size: 5rem;
+  }
+  .h3__inicio{
+      font-size: 2rem;
+      margin-bottom: 3rem;
+  }
+  .img__inicio{
+    width: 35rem;
+    transform: scaleX(-1);
+    }
+   .btn__escritorio{
+    display: inline-block;
+    margin-right: 2rem;
+    font-weight: bold;
+    width: 10rem;
+    padding: 0.5rem 1rem;
+   }
+   .btn1__inicio:hover{
+       background:#f37b43;
+       font-size: 1.1rem;
+   }
+   .btn2__inicio:hover{
+       background: #da52132f;
+       font-size: 1.1rem;
+   }
+
+  
 }
