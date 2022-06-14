@@ -660,7 +660,7 @@ form{
 .form-visible{
     visibility: hidden;
 }
-.nav__escritorio,.btn__escritorio{
+.nav__escritorio,.btn__escritorio,.sobreMi__h1{
     display: none;
 }
 /*FIN FOOTER*/
@@ -671,7 +671,7 @@ form{
 
 /* INICIO */
 @media screen and (min-width:1024px) {
-  .nav__responsive,.nav__iconMenu,.btn__responsive{
+  .nav__responsive,.nav__iconMenu,.btn__responsive,.skills__sobreMi{
       display: none;
   }
 
@@ -733,6 +733,44 @@ form{
        background: #da52132f;
        font-size: 1.1rem;
    }
+   /*FIN SECTION-INICIO ESCRITORIO*/
 
-  
+   /* INICIO SECTION-SOBRE-MI ESCRITORIO */
+   .section__sobreMi{
+       display: flex;
+       flex-direction: row;
+       padding: 0 4rem;
+   }
+   .img__sobreMi{
+       align-self: flex-start;
+       border-radius: 0;
+       height: 20rem;
+       width: 25rem;
+   }
+   .card360__container__sobreMi{
+       display: flex;
+       flex-direction: column;
+       padding: 0 3rem;
+       height: 100vh;
+   }
+   .sobreMi__h1{
+       display: inline-block;
+       text-align: center;
+       font-weight: bold;
+       font-size: 3rem;
+       color: var(--letras2);
+       justify-self: flex-start;
+   }
+   .card360__sobreMi1{
+       order: 1;
+       position: static;
+       font-size: 1.3rem;
+       animation: none;
+       height: auto;
+   }
+   .card360__sobreMi2{
+       position: static;
+       order: 2;
+       animation: none;
+   }
 }
